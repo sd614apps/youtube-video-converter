@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>YouTube Video Converter</h1>
+        <!-- Navigation menu -->
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Convert YouTube Video to MP4</h2>
+        <form id="conversion-form">
+            <label for="video-url">Enter YouTube Video URL:</label>
+            <input type="text" id="video-url" name="video-url" placeholder="<URL>">
+            <button type="submit" id="convert-button">Convert</button>
+        </form>
+        
+        <div id="video-details" style="display: none;">
+        <h3>Converted Video Details:</h3>
+        <div id="video-title"></div>
+        <div id="video-duration"></div>
+        <img id="video-thumbnail" src="" alt="Video Thumbnail">
+        <video id="video-player" controls></video>
+        <a id="download-link" href="#" download>Download</a>
+        </div>
+        
+        <div id="error-message" style="display: none;"></div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
